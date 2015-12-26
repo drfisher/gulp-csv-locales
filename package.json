@@ -1,6 +1,6 @@
 {
   "name": "gulp-csv-locales",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This gulp task creates _locales for Google Chrome's extensions and apps from a CSV file.",
   "repository": {
     "type": "git",
@@ -13,13 +13,10 @@
   "author": "Pavel Rybin <me@drfisher.ru>",
   "license": "MIT",
   "dependencies": {
-    "csv-locales": "^1.1.0",
-    "event-stream": "^3.3.1"
-  },
-  "peerDependencies": {
-    "gulp": "^3.9.0"
+    "csv-locales": "^1.1.0"
   },
   "devDependencies": {
+    "gulp": "^3.9.0"
   },
   "keywords": [
     "gulpplugin",

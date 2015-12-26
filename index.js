@@ -2,7 +2,6 @@
 
 var csvLocales = require('csv-locales');
 var path = require('path');
-var es = require('event-stream');
 
 module.exports = function (options) {
   var processDir = process.cwd();
@@ -14,12 +13,12 @@ module.exports = function (options) {
     debug: !!options.debug
   };
 
-  return es.map(function (data, callback) {
+  return new Promise(function (resolve, reject) {
     csvLocales(params, function (err) {
       if (err) {
-        throw err;
+        reject(err);
       }
-      callback();
+      resolve();
     });
   });
 };
